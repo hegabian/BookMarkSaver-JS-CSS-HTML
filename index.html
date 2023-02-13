@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bookmark</title>
+</head>
+<body>
+    <div class="container px-5">
+        <div class="head">
+            <h3 class="my-5 text-black-50 fw-bolder">Bookmarker</h3>
+            <hr>
+        </div>
+        <div class="dataEntryField text-center overflow-hidden ">
+            <h4 class="my-5 fw-bold ">Bookmark your favourite sites</h4>
+            <div class="formgroup">
+                <label class="w-100 fs-6 mb-3 fw-bold" for="siteName">Site Name</label>
+                <input pattern="\s*" class="w-75 mb-2 fs-6" type="text" id="siteName" placeholder="BookMark Name" required>
+                <div id="nRequired" class="alrm fw-bold mb-4 d-none">Name is required</div>
+            </div>    
+            <div class="formgroup">
+                <label class="w-100 fs-6 mb-3 fw-bold" for="siteURL">Site URL</label>
+                <input pattern="\s*" class="w-75 mb-2 fs-6" type="text" id="siteURL" placeholder="BookMark URL" required>
+                <div id="uRequired" class="alrm fw-bold mb-4 d-none">Site URL is required</div>
+            </div>  
+            <button id="submit" class="btn btn-primary mb-5">Submit</button>
+        </div>
+        <div class="bookmark">
+            <table class="table text-center mb-5">
+                <tr>
+                    <th>index</th>
+                    <th>Site Name</th>
+                    <th>Visit</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+            
+                </tbody>
+            </table>
+        </div>
+        <hr>
+    <div class="footer w-75 ">
+        <h6 class="footertxt text-black-50 fw-bold my-5">© 2019 Bookmarker Inc.</h6>
+    </div>
+    </div>
+    
+    
+<script src="./js/index.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
